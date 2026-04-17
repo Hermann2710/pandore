@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "metadata": {
+      "title": "Accueil | {AppName}",
+      "description": "Bienvenue sur la page d'accueil de {AppName}!"
+    },
+    "title": "Bonjour le monde!"
+  },
+  "Auth": {
+    "Validation": {
+      "email_required": "L'adresse e-mail est obligatoire.",
+      "email_invalid": "Le format de l'e-mail est incorrect (ex: nom@domaine.com).",
+      "password_required": "Le mot de passe ne peut pas être vide.",
+      "password_too_short": "Le mot de passe doit contenir au moins 8 caractères pour plus de sécurité.",
+      "password_mismatch": "Les deux mots de passe ne sont pas identiques.",
+      "name_required": "Veuillez saisir votre nom complet.",
+      "name_too_short": "Le nom doit comporter au moins 2 caractères."
+    }
+  }
+}

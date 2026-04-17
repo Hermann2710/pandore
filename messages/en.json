@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "metadata": {
+      "title": "Home | {AppName}",
+      "description": "Welcome to the homepage of {AppName}!"
+    },
+    "title": "Hello world!"
+  },
+  "Auth": {
+    "Validation": {
+      "email_required": "Email address is required.",
+      "email_invalid": "Please enter a valid email format (e.g., name@domain.com).",
+      "password_required": "Password cannot be empty.",
+      "password_too_short": "Password must be at least 8 characters long for better security.",
+      "password_mismatch": "The passwords do not match.",
+      "name_required": "Please enter your full name.",
+      "name_too_short": "Name must be at least 2 characters long."
+    }
+  }
+}
