@@ -1,20 +1,50 @@
 {
-  "HomePage": {
-    "metadata": {
-      "title": "Accueil | {AppName}",
-      "description": "Bienvenue sur la page d'accueil de {AppName}!"
-    },
-    "title": "Bonjour le monde!"
-  },
   "Auth": {
-    "Validation": {
-      "email_required": "L'adresse e-mail est obligatoire.",
-      "email_invalid": "Le format de l'e-mail est incorrect (ex: nom@domaine.com).",
-      "password_required": "Le mot de passe ne peut pas être vide.",
-      "password_too_short": "Le mot de passe doit contenir au moins 8 caractères pour plus de sécurité.",
-      "password_mismatch": "Les deux mots de passe ne sont pas identiques.",
-      "name_required": "Veuillez saisir votre nom complet.",
-      "name_too_short": "Le nom doit comporter au moins 2 caractères."
-    }
+    "loginMetadataTitle": "Connexion | Mon E-commerce",
+    "loginMetadataDescription": "Connectez-vous à votre compte pour gérer vos commandes et vos préférences.",
+    "loginTitle": "Connexion",
+    "loginSubtitle": "Ravi de vous revoir",
+    "firstNameLabel": "Prénom",
+    "lastNameLabel": "Nom",
+    "firstNameTooShort": "Prénom trop court",
+    "lastNameTooShort": "Nom trop court",
+    "emailLabel": "Adresse Email",
+    "passwordLabel": "Mot de passe",
+    "forgotPasswordLink": "Mot de passe oublié ?",
+    "loginButton": "Se connecter",
+    "loading": "Chargement...",
+    "orContinueWith": "Ou continuer avec",
+    "noAccount": "Pas encore de compte ?",
+    "registerLink": "S'inscrire",
+    "backToHome": "Retour",
+    "footerBrand": "E-commerce",
+    "emailInvalid": "Veuillez entrer une adresse email valide",
+    "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères",
+    "registerMetadataTitle": "Créer un compte",
+    "registerMetadataDescription": "Inscrivez-vous pour profiter de nos offres.",
+    "registerTitle": "Inscription",
+    "registerSubtitle": "Rejoignez l'aventure",
+    "nameLabel": "Nom complet",
+    "confirmPasswordLabel": "Confirmer le mot de passe",
+    "registerButton": "Créer mon compte",
+    "alreadyHaveAccount": "Déjà un compte ?",
+    "loginLink": "Se connecter",
+    "nameTooShort": "Le nom doit contenir au moins 2 caractères",
+    "passwordsDontMatch": "Les mots de passe ne sont pas identiques",
+    "forgotPasswordMetadataTitle": "Mot de passe oublié | E-commerce",
+    "forgotPasswordMetadataDescription": "Réinitialisez votre mot de passe en toute sécurité.",
+    "forgotPasswordTitle": "Mot de passe oublié",
+    "forgotPasswordSubtitle": "Entrez votre email pour recevoir un lien de réinitialisation",
+    "sendResetLink": "Envoyer le lien",
+    "rememberPassword": "Vous vous en souvenez ?",
+    "checkEmailTitle": "Vérifiez vos emails",
+    "checkEmailDescription": "Si un compte existe pour cet email, vous recevrez un lien de réinitialisation d'ici quelques instants.",
+    "retryButton": "Ressayer avec un autre email"
+  },
+  "Common": {
+    "switchLanguage": "Changer de langue",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
   }
 }

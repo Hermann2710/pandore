@@ -1,26 +1,36 @@
-import {
-  AuthCard,
-  AuthHeader,
-  CredentialFields,
-  AuthFooter,
-} from "@/components/auth"
+import { getTranslations } from "next-intl/server"
+import { AuthCard, AuthHeader, AuthFooter } from "@/components/auth"
+import { ForgotPasswordForm } from "@/components/auth"
 
-export default function ForgotPasswordPage() {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations({ locale, namespace: "Auth" })
+  return {
+    title: t("forgotPasswordMetadataTitle"),
+    description: t("forgotPasswordMetadataDescription"),
+  }
+}
+
+export default async function ForgotPasswordPage() {
+  const t = await getTranslations("Auth")
+
   return (
     <AuthCard>
       <AuthHeader
-        title="Mot de passe oublié ?"
-        subtitle="Entrez votre email pour recevoir un lien de récupération"
+        title={t("forgotPasswordTitle")}
+        subtitle={t("forgotPasswordSubtitle")}
       />
 
-      <form>
-        <CredentialFields>
-          <input type="email" placeholder="Votre email" />
-        </CredentialFields>
-        <button type="submit">Envoyer le lien</button>
-      </form>
+      <ForgotPasswordForm />
 
-      <AuthFooter label="Retourner à la" linkText="connexion" href="/login" />
+      <AuthFooter
+        label={t("rememberPassword")}
+        linkText={t("loginLink")}
+        href="/login"
+      />
     </AuthCard>
   )
 }

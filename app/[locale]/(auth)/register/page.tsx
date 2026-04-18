@@ -1,33 +1,38 @@
+import { getTranslations } from "next-intl/server"
 import {
   AuthCard,
   AuthHeader,
-  CredentialFields,
-  SocialProviderList,
   AuthFooter,
+  SocialProviderList,
 } from "@/components/auth"
+import { RegisterForm } from "@/components/auth"
 
-export default function RegisterPage() {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations({ locale, namespace: "Auth" })
+  return {
+    title: t("registerMetadataTitle"),
+    description: t("registerMetadataDescription"),
+  }
+}
+
+export default async function RegisterPage() {
+  const t = await getTranslations("Auth")
+
   return (
     <AuthCard>
-      <AuthHeader
-        title="Créer un compte"
-        subtitle="Rejoignez notre communauté"
-      />
+      <AuthHeader title={t("registerTitle")} subtitle={t("registerSubtitle")} />
 
       <SocialProviderList />
 
-      <form>
-        <CredentialFields>
-          <input type="text" placeholder="Nom complet" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Mot de passe" />
-        </CredentialFields>
-        <button type="submit">S'inscrire</button>
-      </form>
+      <RegisterForm />
 
       <AuthFooter
-        label="Déjà un compte ?"
-        linkText="Se connecter"
+        label={t("alreadyHaveAccount")}
+        linkText={t("loginLink")}
         href="/login"
       />
     </AuthCard>

@@ -1,20 +1,50 @@
 {
-  "HomePage": {
-    "metadata": {
-      "title": "Home | {AppName}",
-      "description": "Welcome to the homepage of {AppName}!"
-    },
-    "title": "Hello world!"
-  },
   "Auth": {
-    "Validation": {
-      "email_required": "Email address is required.",
-      "email_invalid": "Please enter a valid email format (e.g., name@domain.com).",
-      "password_required": "Password cannot be empty.",
-      "password_too_short": "Password must be at least 8 characters long for better security.",
-      "password_mismatch": "The passwords do not match.",
-      "name_required": "Please enter your full name.",
-      "name_too_short": "Name must be at least 2 characters long."
-    }
+    "loginMetadataTitle": "Login | My E-commerce",
+    "loginMetadataDescription": "Log in to your account to manage your orders and preferences.",
+    "loginTitle": "Login",
+    "loginSubtitle": "Glad to see you again",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "firstNameTooShort": "First name too short",
+    "lastNameTooShort": "Last name too short",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "forgotPasswordLink": "Forgot password?",
+    "loginButton": "Log in",
+    "loading": "Loading...",
+    "orContinueWith": "Or continue with",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Sign up",
+    "backToHome": "Back",
+    "footerBrand": "E-commerce",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordTooShort": "Password must be at least 8 characters long",
+    "registerMetadataTitle": "Create an account",
+    "registerMetadataDescription": "Sign up to enjoy our latest offers.",
+    "registerTitle": "Sign up",
+    "registerSubtitle": "Join the adventure",
+    "nameLabel": "Full Name",
+    "confirmPasswordLabel": "Confirm Password",
+    "registerButton": "Create my account",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Log in",
+    "nameTooShort": "Name must be at least 2 characters long",
+    "passwordsDontMatch": "Passwords do not match",
+    "forgotPasswordMetadataTitle": "Forgot Password | E-commerce",
+    "forgotPasswordMetadataDescription": "Reset your password securely.",
+    "forgotPasswordTitle": "Forgot Password",
+    "forgotPasswordSubtitle": "Enter your email to receive a reset link",
+    "sendResetLink": "Send reset link",
+    "rememberPassword": "Remember your password?",
+    "checkEmailTitle": "Check your inbox",
+    "checkEmailDescription": "If an account exists for this email, you will receive a reset link shortly.",
+    "retryButton": "Try another email"
+  },
+  "Common": {
+    "switchLanguage": "Switch language",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }
