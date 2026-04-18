@@ -2,7 +2,6 @@ import { Geist_Mono, Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { Metadata } from "next"
-import { NextIntlClientProvider } from "next-intl"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
