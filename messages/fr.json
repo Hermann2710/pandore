@@ -86,6 +86,112 @@
       "status": "Statut"
     }
   },
+  "Customer": {
+    "nav": {
+      "home": "Mon Compte",
+      "shop": "Boutique",
+      "overview": "Vue d'ensemble",
+      "orders": "Mes commandes",
+      "wishlist": "Ma liste d'envies",
+      "settings": "Paramètres",
+      "logout": "Déconnexion",
+    "myAccount": "Mon compte"
+    },
+    "metadata": {
+      "title": "Tableau de bord",
+      "description": "Gérez vos commandes, suivez vos livraisons et modifiez vos préférences en toute sécurité."
+    },
+    "dashboard": {
+      "welcome": "Bienvenue dans votre espace personnel.",
+      "stats": {
+        "activeOrders": "{count} en cours",
+        "savedProducts": "Produits sauvegardés",
+        "availableDiscount": "{amount}€ de réduction dispo.",
+        "deliveryFinished": "Livraison terminée",
+        "loyaltyPoints": "Points Fidélité",
+        "lastOrder": "Dernière commande",
+        "daysAgo": "Il y a {count}j"
+      },
+      "sections": {
+        "upcomingDeliveries": "Prochaines livraisons",
+        "noDeliveries": "Aucune livraison prévue pour aujourd'hui.",
+        "recentMessages": "Messages récents",
+        "noMessages": "Vous n'avez pas de nouveaux messages.",
+        "noWishlist": "Votre liste d'envies est vide pour le moment."
+      }
+    },
+    "orders": {
+      "perPage": "{count} par page",
+      "viewDetails": "Voir le détail",
+      "statusLabel": "Statut",
+      "totalLabel": "Total",
+      "searchPlaceholder": "Rechercher par n° de commande...",
+      "sortBy": "Trier par",
+      "noOrders": "Aucune commande trouvée.",
+      "showingOrders": "Affichage de {count} commande(s)",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "sort": {
+        "newest": "Plus récent",
+        "oldest": "Plus ancien",
+        "priceAsc": "Prix croissant",
+        "priceDesc": "Prix décroissant"
+      },
+      "backToList": "Retour à la liste",
+      "downloadInvoice": "Télécharger la facture (PDF)",
+      "support": "Besoin d'aide ? Support",
+      "details": "Détails de la commande",
+      "shipping": "Livraison",
+      "billing": "Paiement",
+      "address": "Adresse de livraison",
+      "paymentConfirmed": "Transaction confirmée",
+      "table": {
+        "product": "Produit",
+        "quantity": "Quantité",
+        "price": "Prix"
+      },
+      "addToCart": "Ajouter au panier"
+    },
+    "settings": {
+      "tabs": {
+        "profile": "Profil",
+        "security": "Sécurité",
+        "danger": "Zone de danger"
+      },
+      "profile": {
+        "title": "Informations personnelles",
+        "avatar": "Photo de profil",
+        "changeAvatar": "Changer la photo",
+        "name": "Nom complet",
+        "email": "Adresse e-mail",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "imageConstraints": "JPG, PNG ou GIF. Max 2 Mo.",
+        "phoneNumber": "Numéro de téléphone",
+        "save": "Enregistrer les modifications"
+      },
+      "security": {
+        "title": "Mot de passe",
+        "currentPassword": "Mot de passe actuel",
+        "newPassword": "Nouveau mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "update": "Mettre à jour le mot de passe"
+      },
+      "dangerZone": {
+        "title": "Supprimer le compte",
+        "description": "Cette action est irréversible. Toutes vos données seront effacées.",
+        "deleteButton": "Supprimer définitivement mon compte",
+        "cancel": "Annuler"
+      },
+      "errors": {
+        "minChar": "Ce champ doit contenir au moins 2 caractères",
+        "invalidEmail": "Adresse e-mail invalide",
+        "invalidPhone": "Numéro de téléphone invalide",
+        "passwordLength": "Le mot de passe doit contenir au moins 8 caractères",
+        "passwordMatch": "Les mots de passe ne correspondent pas"
+      }
+    }
+  },
   "Common": {
     "switchLanguage": "Changer de langue",
     "light": "Clair",

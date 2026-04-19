@@ -11,61 +11,61 @@
     "emailLabel": "Email Address",
     "passwordLabel": "Password",
     "forgotPasswordLink": "Forgot password?",
-    "loginButton": "Log in",
+    "loginButton": "Login",
     "loading": "Loading...",
     "orContinueWith": "Or continue with",
-    "noAccount": "Don't have an account yet?",
-    "registerLink": "Sign up",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register",
     "backToHome": "Back",
     "footerBrand": "E-commerce",
     "emailInvalid": "Please enter a valid email address",
-    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordTooShort": "Password must be at least 8 characters long",
     "registerMetadataTitle": "Create an account",
     "registerMetadataDescription": "Sign up to enjoy our offers.",
-    "registerTitle": "Sign up",
+    "registerTitle": "Register",
     "registerSubtitle": "Join the adventure",
     "nameLabel": "Full Name",
     "confirmPasswordLabel": "Confirm password",
     "registerButton": "Create my account",
     "alreadyHaveAccount": "Already have an account?",
-    "loginLink": "Log in",
-    "nameTooShort": "Name must be at least 2 characters",
+    "loginLink": "Login",
+    "nameTooShort": "Name must be at least 2 characters long",
     "passwordsDontMatch": "Passwords do not match",
     "forgotPasswordMetadataTitle": "Forgot Password | E-commerce",
     "forgotPasswordMetadataDescription": "Reset your password securely.",
     "forgotPasswordTitle": "Forgot Password",
     "forgotPasswordSubtitle": "Enter your email to receive a reset link",
     "sendResetLink": "Send link",
-    "rememberPassword": "Do you remember it?",
+    "rememberPassword": "Remember it?",
     "checkEmailTitle": "Check your emails",
-    "checkEmailDescription": "If an account exists for this email, you will receive a reset link shortly.",
+    "checkEmailDescription": "If an account exists for this email, you will receive a reset link in a few moments.",
     "retryButton": "Try again with another email"
   },
   "Driver": {
-    "title": "Driver Space",
+    "title": "Driver Area",
     "nav": {
       "available": "Available",
-      "active": "Active",
+      "active": "In Progress",
       "history": "History"
     },
     "dashboardTitle": "Dashboard",
-    "dashboardSubtitle": "Welcome back, ready for your runs?",
+    "dashboardSubtitle": "Welcome, ready for your deliveries?",
     "stats": {
-      "todayRevenue": "Revenue (Excl. Tax)",
-      "completedDeliveries": "Completed runs",
-      "rating": "Global rating",
-      "activeTime": "Online time"
+      "todayRevenue": "Earnings (Excl. Tax)",
+      "completedDeliveries": "Completed Tasks",
+      "rating": "Global Rating",
+      "activeTime": "Time Online"
     },
-    "activeTitle": "Current run",
-    "activeSubtitle": "Delivery in progress to customer",
-    "availableTitle": "Available runs",
-    "noAvailableOrders": "No runs available at the moment.",
+    "activeTitle": "Current Delivery",
+    "activeSubtitle": "Delivery in progress to the client",
+    "availableTitle": "Available Deliveries",
+    "noAvailableOrders": "No deliveries available at the moment.",
     "delivery": {
       "order": "Order",
-      "client": "Customer",
+      "client": "Client",
       "seeOnMap": "See on map",
       "finishDelivery": "Complete delivery",
-      "acceptDelivery": "Accept run",
+      "acceptDelivery": "Accept delivery",
       "ready": "Ready",
       "active": "On the way",
       "completed": "Delivered",
@@ -74,17 +74,123 @@
       "estimatedArrival": "Estimated arrival",
       "steps": {
         "pickup": "Pickup",
-        "delivery": "Handover to customer"
+        "delivery": "Handover to client"
       }
     },
     "historyTitle": "Delivery History",
-  "historySubtitle": "Review your past performances",
-  "table": {
-    "date": "Date",
-    "order": "Order",
-    "earnings": "Earnings",
-    "status": "Status"
-  }
+    "historySubtitle": "Track your past performance",
+    "table": {
+      "date": "Date",
+      "order": "Order",
+      "earnings": "Earnings",
+      "status": "Status"
+    }
+  },
+ "Customer": {
+    "nav": {
+      "home": "My Account",
+      "shop": "Shop",
+      "overview": "Overview",
+      "orders": "My Orders",
+      "wishlist": "My Wishlist",
+      "settings": "Settings",
+      "logout": "Logout",
+      "myAccount": "My Account"
+    },
+    "metadata": {
+      "title": "Dashboard",
+      "description": "Manage your orders, track your deliveries, and securely modify your preferences."
+    },
+    "dashboard": {
+      "welcome": "Welcome to your personal space.",
+      "stats": {
+        "activeOrders": "{count} in progress",
+        "savedProducts": "Saved products",
+        "availableDiscount": "{amount}€ discount available",
+        "deliveryFinished": "Delivery completed",
+        "loyaltyPoints": "Loyalty Points",
+        "lastOrder": "Last order",
+        "daysAgo": "{count} days ago"
+      },
+      "sections": {
+        "upcomingDeliveries": "Upcoming deliveries",
+        "noDeliveries": "No deliveries scheduled for today.",
+        "recentMessages": "Recent messages",
+        "noMessages": "You have no new messages.",
+        "noWishlist": "Your wishlist is currently empty."
+      }
+    },
+    "orders": {
+      "perPage": "{count} per page",
+      "viewDetails": "View details",
+      "statusLabel": "Status",
+      "totalLabel": "Total",
+      "searchPlaceholder": "Search by order no...",
+      "sortBy": "Sort by",
+      "noOrders": "No orders found.",
+      "showingOrders": "Showing {count} order(s)",
+      "previous": "Previous",
+      "next": "Next",
+      "sort": {
+        "newest": "Newest",
+        "oldest": "Oldest",
+        "priceAsc": "Price: Low to High",
+        "priceDesc": "Price: High to Low"
+      },
+      "backToList": "Back to list",
+      "downloadInvoice": "Download invoice (PDF)",
+      "support": "Need help? Support",
+      "details": "Order details",
+      "shipping": "Shipping",
+      "billing": "Payment",
+      "address": "Shipping Address",
+      "paymentConfirmed": "Transaction confirmed",
+      "table": {
+        "product": "Product",
+        "quantity": "Quantity",
+        "price": "Price"
+      },
+      "addToCart": "Add to Cart"
+    },
+    "settings": {
+      "tabs": {
+        "profile": "Profile",
+        "security": "Security",
+        "danger": "Danger Zone"
+      },
+      "profile": {
+        "title": "Personal Information",
+        "avatar": "Profile Picture",
+        "changeAvatar": "Change photo",
+        "name": "Full Name",
+        "email": "Email Address",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "imageConstraints": "JPG, PNG or GIF. Max 2MB.",
+        "phoneNumber": "Phone Number",
+        "save": "Save changes"
+      },
+      "security": {
+        "title": "Password",
+        "currentPassword": "Current password",
+        "newPassword": "New password",
+        "confirmPassword": "Confirm password",
+        "update": "Update password"
+      },
+      "dangerZone": {
+        "title": "Delete Account",
+        "description": "This action is irreversible. All your data will be permanently deleted.",
+        "deleteButton": "Permanently delete my account",
+        "cancel": "Cancel"
+      },
+      "errors": {
+        "minChar": "This field must be at least 2 characters",
+        "invalidEmail": "Invalid email address",
+        "invalidPhone": "Invalid phone number",
+        "passwordLength": "Password must be at least 8 characters",
+        "passwordMatch": "Passwords do not match"
+      }
+    }
   },
   "Common": {
     "switchLanguage": "Change language",

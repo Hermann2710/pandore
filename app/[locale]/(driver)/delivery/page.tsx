@@ -6,7 +6,7 @@ export async function generateMetadata() {
   const t = await getTranslations("Driver")
 
   return {
-    title: t("dashboardTitle"),
+    title: `${t("dashboardTitle")} | Mon E-commerce`,
     description: t("dashboardSubtitle"),
   }
 }

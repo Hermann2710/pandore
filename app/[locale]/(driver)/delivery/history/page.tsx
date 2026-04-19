@@ -4,6 +4,15 @@ import { DeliveryCard } from "@/components/driver"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
+export async function generateMetadata() {
+  const t = await getTranslations("Driver")
+
+  return {
+    title: `${t("historyTitle")} | Mon E-commerce`,
+    description: t("historySubtitle"),
+  }
+}
+
 export default async function DeliveryHistory() {
   const t = await getTranslations("Driver")
 

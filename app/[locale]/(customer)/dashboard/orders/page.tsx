@@ -1,18 +1,14 @@
-import { SectionHeading } from "@/components/shared"
-import { OrderHistoryCard } from "@/components/customer"
+import { getTranslations } from "next-intl/server"
+import { CustomerOrdersClient } from "@/components/customer"
 
-export default function CustomerOrdersPage() {
-  return (
-    <>
-      <SectionHeading title="Mes commandes" />
-      <div className="orders-list">
-        <OrderHistoryCard
-          id="1234"
-          date="15/04/2026"
-          total="45.00"
-          status="Livré"
-        />
-      </div>
-    </>
-  )
+export async function generateMetadata() {
+  const t = await getTranslations("Customer.nav")
+
+  return {
+    title: t("orders"),
+  }
+}
+
+export default function Page() {
+  return <CustomerOrdersClient />
 }

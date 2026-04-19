@@ -1,23 +1,24 @@
-import { SectionHeading } from "@/components/shared"
-import { OrderDetails } from "@/components/customer"
-import Link from "next/link"
+import { getTranslations } from "next-intl/server"
+import { OrderIdClient } from "@/components/customer"
 
-export default function OrderIdPage({ params }: { params: { id: string } }) {
-  return (
-    <>
-      <Link href="/dashboard/orders">← Retour à la liste</Link>
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const t = await getTranslations("Customer.nav")
+  const { id } = await params
 
-      <SectionHeading
-        title={`Commande #${params.id}`}
-        subtitle="Suivez l'avancement de votre colis"
-      />
+  return {
+    title: `${t("orders")} #${id}`,
+  }
+}
 
-      <OrderDetails id={params.id} />
-
-      <footer className="order-actions">
-        <button>Télécharger la facture (PDF)</button>
-        <button>Besoin d'aide ? Contactez le support</button>
-      </footer>
-    </>
-  )
+export default async function OrderIdPage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const { id } = await params
+  return <OrderIdClient id={id} />
 }

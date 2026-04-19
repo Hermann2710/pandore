@@ -1,13 +1,14 @@
-import { SectionHeading } from "@/components/shared"
-import { WishlistItem } from "@/components/customer"
+import { getTranslations } from "next-intl/server"
+import { WishlistClient } from "@/components/customer"
+
+export async function generateMetadata() {
+  const t = await getTranslations("Customer.nav")
+
+  return {
+    title: t("wishlist"),
+  }
+}
 
 export default function WishlistPage() {
-  return (
-    <>
-      <SectionHeading title="Ma Liste d'envies" />
-      <div className="wishlist-grid">
-        <WishlistItem name="Produit Coup de Coeur" price="29.99" />
-      </div>
-    </>
-  )
+  return <WishlistClient />
 }

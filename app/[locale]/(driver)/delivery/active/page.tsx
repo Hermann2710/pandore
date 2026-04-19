@@ -2,8 +2,16 @@ import { getTranslations } from "next-intl/server"
 import { SectionHeading } from "@/components/shared"
 import { DeliveryCard } from "@/components/driver"
 import { Button } from "@/components/ui/button"
-import { Phone, MessageSquare, Clock } from "lucide-react"
-import { CheckCircle } from "lucide-react"
+import { Phone, MessageSquare, Clock, CheckCircle } from "lucide-react"
+
+export async function generateMetadata() {
+  const t = await getTranslations("Driver")
+
+  return {
+    title: `${t("activeTitle")} | Mon E-commerce`,
+    description: t("activeSubtitle"),
+  }
+}
 
 export default async function ActiveDeliveryPage() {
   const t = await getTranslations("Driver")
@@ -17,22 +25,14 @@ export default async function ActiveDeliveryPage() {
         />
 
         <div className="flex gap-3">
-          <Button
-            variant="outline"
-            size="lg"
-            className="gap-2 rounded-full border-primary/20 bg-primary/5 text-primary"
-          >
+          <button className="flex h-12 items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-6 text-primary transition-colors hover:bg-primary/10">
             <Phone className="h-4 w-4" />
             <span className="font-bold">{t("delivery.callClient")}</span>
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="gap-2 rounded-full border-primary/20 bg-primary/5 text-primary"
-          >
+          </button>
+          <button className="flex h-12 items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-6 text-primary transition-colors hover:bg-primary/10">
             <MessageSquare className="h-4 w-4" />
             <span className="font-bold">{t("delivery.messageClient")}</span>
-          </Button>
+          </button>
         </div>
       </div>
 

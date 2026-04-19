@@ -1,17 +1,14 @@
-import { SectionHeading } from "@/components/shared"
+import { getTranslations } from "next-intl/server"
+import { CustomerDashboardClient } from "@/components/customer"
+
+export async function generateMetadata() {
+  const t = await getTranslations("Customer.nav")
+
+  return {
+    title: t("overview"),
+  }
+}
 
 export default function CustomerDashboardPage() {
-  return (
-    <>
-      <SectionHeading
-        title="Mon Compte"
-        subtitle="Bienvenue dans votre espace personnel."
-      />
-      <section>
-        <p>
-          Prochaines livraisons, points de fidélité ou messages récents ici.
-        </p>
-      </section>
-    </>
-  )
+  return <CustomerDashboardClient />
 }

@@ -2,6 +2,15 @@ import { getTranslations } from "next-intl/server"
 import { SectionHeading } from "@/components/shared"
 import { DeliveryCard } from "@/components/driver"
 
+export async function generateMetadata() {
+  const t = await getTranslations("Driver")
+
+  return {
+    title: `${t("availableTitle")} | Mon E-commerce`,
+    description: t("dashboardSubtitle"),
+  }
+}
+
 export default async function AvailableDeliveries() {
   const t = await getTranslations("Driver")
 
