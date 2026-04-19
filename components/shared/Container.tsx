@@ -1,3 +1,16 @@
-export const Container = ({ children }: { children: React.ReactNode }) => {
-  return <section>{children}</section>
+import { cn } from "@/lib/utils"
+
+interface ContainerProps {
+  children: React.ReactNode
+  className?: string
+}
+
+export const Container = ({ children, className }: ContainerProps) => {
+  return (
+    <section
+      className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8", className)}
+    >
+      {children}
+    </section>
+  )
 }

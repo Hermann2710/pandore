@@ -41,6 +41,51 @@
     "checkEmailDescription": "Si un compte existe pour cet email, vous recevrez un lien de réinitialisation d'ici quelques instants.",
     "retryButton": "Ressayer avec un autre email"
   },
+  "Driver": {
+    "title": "Espace Livreur",
+    "nav": {
+      "available": "Disponibles",
+      "active": "En cours",
+      "history": "Historique"
+    },
+    "dashboardTitle": "Tableau de bord",
+    "dashboardSubtitle": "Bienvenue, prêt pour vos courses ?",
+    "stats": {
+      "todayRevenue": "Revenus (H.T)",
+      "completedDeliveries": "Courses terminées",
+      "rating": "Note globale",
+      "activeTime": "Temps en ligne"
+    },
+    "activeTitle": "Course en cours",
+    "activeSubtitle": "Livraison en cours vers le client",
+    "availableTitle": "Courses disponibles",
+    "noAvailableOrders": "Aucune course disponible pour le moment.",
+    "delivery": {
+      "order": "Commande",
+      "client": "Client",
+      "seeOnMap": "Voir sur la carte",
+      "finishDelivery": "Terminer la livraison",
+      "acceptDelivery": "Accepter la course",
+      "ready": "Prête",
+      "active": "En route",
+      "completed": "Livrée",
+      "callClient": "Appeler",
+      "messageClient": "Message",
+      "estimatedArrival": "Arrivée estimée",
+      "steps": {
+        "pickup": "Récupération",
+        "delivery": "Remise au client"
+      }
+    },
+    "historyTitle": "Historique des livraisons",
+    "historySubtitle": "Retrouvez vos performances passées",
+    "table": {
+      "date": "Date",
+      "order": "Commande",
+      "earnings": "Gains",
+      "status": "Statut"
+    }
+  },
   "Common": {
     "switchLanguage": "Changer de langue",
     "light": "Clair",
