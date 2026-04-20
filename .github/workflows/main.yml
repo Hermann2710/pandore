@@ -5,6 +5,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch: # Permet de lancer manuellement depuis l'interface GitHub
 
 jobs:
   quality-check:
@@ -14,24 +15,31 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
+      - name: Installer pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          # On s'assure d'utiliser une version de pnpm compatible avec Node 24
+          version: 9
+
       - name: Configuration de Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: "npm"
+          node-version: "24.15.0"
+          cache: "pnpm"
 
       - name: Installation des dépendances
-        run: npm ci # "npm ci" est plus rapide et strict que "npm install" en CI
+        # --frozen-lockfile assure que pnpm-lock.yaml est respecté à la lettre
+        run: pnpm install --frozen-lockfile
 
       - name: Vérification des types (TypeScript)
-        run: npm run typecheck
+        run: pnpm run typecheck
 
       - name: Analyse statique (ESLint)
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Vérification du build Next.js
-        run: npm run build
+        run: pnpm run build
 
       - name: Build Docker image
-        # Cette étape échouera si vous n'avez pas encore de fichier "Dockerfile"
+        # Cette étape nécessite un fichier Dockerfile à la racine
         run: docker build -t pandore-app .
