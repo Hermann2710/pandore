@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { useTranslations } from "next-intl"
-import { Settings, LogOut, UserCircle, ChevronsUpDown } from "lucide-react"
+import { Settings, LogOut, ChevronsUpDown } from "lucide-react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,10 +19,9 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 
-export function UserDropdown() {
-  const t = useTranslations("Customer.nav")
+export function AdminUserDropdown() {
+  const t = useTranslations("Admin.nav")
   const { isMobile } = useSidebar()
 
   return (
@@ -31,21 +31,21 @@ export function UserDropdown() {
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton
               size="lg"
-              className="h-14 group-data-[collapsible=icon]:justify-center! group-data-[collapsible=icon]:p-0!"
+              className="h-14 group-data-[collapsible=icon]:justify-center! group-data-[collapsible=icon]:p-0! data-[state=open]:bg-sidebar-accent"
             >
               <Avatar className="size-10 rounded-lg">
-                <AvatarImage src="/user-avatar.jpg" alt="User" />
-                <AvatarFallback className="rounded-lg bg-primary text-primary-foreground">
-                  JD
+                <AvatarImage src="/admin-avatar.jpg" alt="Admin" />
+                <AvatarFallback className="rounded-lg bg-orange-600 text-white">
+                  AD
                 </AvatarFallback>
               </Avatar>
 
               <div className="ml-2 grid flex-1 text-left text-sm leading-tight group-data-[collapsible=icon]:hidden">
-                <span className="truncate text-base font-semibold">
-                  John Doe
+                <span className="truncate text-base font-semibold text-orange-600">
+                  Admin
                 </span>
                 <span className="truncate text-xs text-muted-foreground">
-                  john@doe.com
+                  admin@eshop.com
                 </span>
               </div>
               <ChevronsUpDown className="ml-auto size-4 group-data-[collapsible=icon]:hidden" />
@@ -60,13 +60,15 @@ export function UserDropdown() {
           >
             <DropdownMenuLabel className="p-0 font-normal">
               <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-muted text-muted-foreground">
-                  <UserCircle className="size-5" />
-                </div>
+                <Avatar className="size-8 rounded-lg">
+                  <AvatarFallback className="bg-orange-600 text-[10px] text-white">
+                    AD
+                  </AvatarFallback>
+                </Avatar>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">John Doe</span>
+                  <span className="truncate font-semibold">Administrator</span>
                   <span className="truncate text-xs text-muted-foreground">
-                    client@example.com
+                    admin@eshop.com
                   </span>
                 </div>
               </div>
@@ -75,7 +77,7 @@ export function UserDropdown() {
             <DropdownMenuGroup>
               <DropdownMenuItem asChild className="cursor-pointer py-2">
                 <Link
-                  href="/dashboard/settings"
+                  href="/admin/settings"
                   className="flex w-full items-center"
                 >
                   <Settings className="mr-2 size-5" />
@@ -84,7 +86,7 @@ export function UserDropdown() {
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="cursor-pointer py-2 text-destructive focus:bg-destructive/10 focus:text-destructive">
+            <DropdownMenuItem className="cursor-pointer py-2 text-destructive focus:bg-destructive/10">
               <LogOut className="mr-2 size-5" />
               <span className="text-base font-medium">{t("logout")}</span>
             </DropdownMenuItem>

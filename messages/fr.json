@@ -41,6 +41,182 @@
     "checkEmailDescription": "Si un compte existe pour cet email, vous recevrez un lien de réinitialisation d'ici quelques instants.",
     "retryButton": "Ressayer avec un autre email"
   },
+  "Admin": {
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "products": "Produits",
+      "categories": "Catégories",
+      "orders": "Commandes",
+      "users": "Utilisateurs",
+      "marketing": "Marketing",
+      "reviews": "Avis",
+      "settings": "Paramètres",
+      "logout": "Se déconnecter"
+    },
+    "metadata": {
+      "description": "Tableau de bord de gestion de la boutique, contrôle des produits et des commandes."
+    },
+    "dashboard": {
+      "metadata": {
+        "title": "Tableau de Bord",
+        "description": "Vue d'ensemble des performances de la boutique"
+      },
+      "title": "Vue d'ensemble",
+      "subtitle": "Statistiques en temps réel de votre boutique",
+      "revenue": "Chiffre d'affaires",
+      "orders": "Commandes",
+      "customers": "Nouveaux clients",
+      "sales": "Ventes",
+      "trends": {
+        "up": "par rapport au mois dernier"
+      },
+      "charts": {
+        "revenue": "Analyse des revenus",
+        "sales": "Ventes récentes"
+      }
+    },
+    "categories": {
+      "metadata": {
+        "title": "Gestion des Catégories",
+        "description": "Organisez vos produits par catégories."
+      },
+      "title": "Catégories",
+      "subtitle": "Gérez les catégories de votre catalogue",
+      "add_button": "Ajouter une catégorie",
+      "search_placeholder": "Filtrer les catégories...",
+      "actions": {
+        "edit": "Modifier",
+        "delete": "Supprimer"
+      },
+      "columns": {
+        "name": "Nom",
+        "slug": "Slug",
+        "products": "Produits liés",
+        "actions": "Actions"
+      },
+      "delete_dialog": {
+        "title": "Êtes-vous sûr ?",
+        "description": "Cette action est irréversible. Cela supprimera définitivement la catégorie.",
+        "confirm": "Supprimer",
+        "cancel": "Annuler"
+      },
+      "form": {
+        "add_title": "Nouvelle catégorie",
+        "edit_title": "Modifier la catégorie",
+        "description_text": "Remplissez les détails de votre catégorie de produits.",
+        "name_label": "Nom de la catégorie",
+        "name_placeholder": "ex: Électronique",
+        "slug_label": "Slug (URL)",
+        "slug_placeholder": "ex: electronique",
+        "desc_label": "Description",
+        "desc_placeholder": "Décrivez brièvement cette catégorie...",
+        "submit_add": "Créer la catégorie",
+        "submit_edit": "Enregistrer les modifications",
+        "errors": {
+          "name_required": "Le nom est requis",
+          "slug_required": "Le slug est requis",
+          "desc_too_short": "La description est trop courte"
+        }
+      }
+    },
+    "marketing": {
+      "metadata": {
+        "title": "Marketing & Promotions",
+        "description": "Gérez vos codes promos et vos campagnes publicitaires."
+      },
+      "title": "Marketing & Promotions",
+      "subtitle": "Boostez vos ventes avec des offres ciblées",
+      "create_coupon": {
+        "title": "Créer un code promo",
+        "description": "Générez des remises instantanées",
+        "code_placeholder": "ex: SUMMER20",
+        "discount_placeholder": "20",
+        "submit": "Générer le code",
+        "errors": {
+          "code_required": "Le code est requis",
+          "discount_min": "La remise doit être d'au moins 1%",
+          "discount_max": "La remise ne peut pas dépasser 100%"
+        }
+      },
+      "campaigns": {
+        "title": "Campagnes actives",
+        "banners_title": "Gestion des bannières",
+        "banners_description": "Visualisez et gérez vos affichages promotionnels",
+        "banner_summer": "Bannière d'été",
+        "add_banner": "Ajouter une bannière",
+        "expires_in": "Expire dans {days} jours",
+        "status_active": "Active",
+        "table": {
+          "name": "Nom",
+          "status": "Statut",
+          "expiry": "Expiration",
+          "actions": "Actions"
+        },
+        "form": {
+          "title_add": "Nouvelle Bannière",
+          "title_edit": "Modifier la bannière",
+          "description_text": "Remplissez les informations de la campagne.",
+          "name_label": "Nom de la campagne",
+          "name_placeholder": "ex: Soldes d'hiver",
+          "image_label": "URL de l'image",
+          "image_placeholder": "https://...",
+          "active_label": "Bannière active",
+          "expiry_label": "Date d'expiration",
+          "submit_add": "Créer",
+          "submit_edit": "Enregistrer",
+          "errors": {
+            "name_required": "Le nom est requis",
+            "url_invalid": "L'URL est invalide",
+            "date_invalid": "Date requise"
+          }
+        }
+      }
+    },
+    "orders": {
+      "metadata": {
+        "title": "Commandes",
+        "description": "Suivi et gestion des commandes clients."
+      },
+      "title": "Gestion des Commandes",
+      "subtitle": "Consultez et mettez à jour l'état des ventes",
+      "table": {
+        "id": "ID",
+        "customer": "Client",
+        "total": "Total",
+        "status": "Statut",
+        "actions": "Actions",
+        "view_details": "Détails"
+      },
+      "statuses": {
+        "pending": "En attente",
+        "processing": "En préparation",
+        "shipped": "Expédiée",
+        "delivered": "Livrée",
+        "cancelled": "Annulée"
+      },
+      "details": {
+        "title": "Détails de la commande",
+        "description": "Consultez les informations complètes et gérez le statut.",
+        "customer_info": "Informations Client",
+        "shipping_address": "Adresse de livraison",
+        "items_list": "Articles commandés",
+        "summary": "Résumé financier",
+        "status_management": "Gestion du statut",
+        "table": {
+          "product": "Produit",
+          "qty": "Qté",
+          "price": "Prix"
+        },
+        "fields": {
+          "email": "Email",
+          "phone": "Téléphone",
+          "subtotal": "Sous-total",
+          "shipping": "Livraison",
+          "total": "Total"
+        }
+      }
+    }
+  },
   "Driver": {
     "title": "Espace Livreur",
     "nav": {
@@ -95,7 +271,7 @@
       "wishlist": "Ma liste d'envies",
       "settings": "Paramètres",
       "logout": "Déconnexion",
-    "myAccount": "Mon compte"
+      "myAccount": "Mon compte"
     },
     "metadata": {
       "title": "Tableau de bord",
@@ -196,6 +372,18 @@
     "switchLanguage": "Changer de langue",
     "light": "Clair",
     "dark": "Sombre",
-    "system": "Système"
+    "system": "Système",
+    "table": {
+      "no_results": "Aucun résultat.",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "showing": "Affichage de {first} à {last} sur {total} résultats",
+      "search_all": "Rechercher dans toutes les colonnes...",
+      "rows_per_page": "Lignes par page",
+      "page_info": "Page {current} sur {total}"
+    },
+    "actions": {
+      "close": "Fermer"
+    }
   }
 }

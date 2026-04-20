@@ -1,22 +1,33 @@
-import { DataTable } from "@/components/admin"
+import { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
+import { SectionHeading } from "@/components/shared"
+import { CategoriesTableClient, CategoryFormDialog } from "@/components/admin"
 
-export default function AdminCategoriesPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Admin.categories.metadata")
+  return {
+    title: t("title"),
+    description: t("description"),
+  }
+}
+
+export default async function AdminCategoriesPage() {
+  const t = await getTranslations("Admin.categories")
+
+  const data = [
+    { id: "1", name: "Électronique", slug: "/electronics", products: 156 },
+    { id: "2", name: "Mode", slug: "/fashion", products: 84 },
+    { id: "3", name: "Maison", slug: "/home", products: 42 },
+  ]
+
   return (
-    <>
-      <div className="flex-header">
-        <h2>Catégories</h2>
-        <button>+ Ajouter une catégorie</button>
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+        <CategoryFormDialog />
       </div>
-      <DataTable headers={["Nom", "Slug", "Produits liés", "Actions"]}>
-        <tr>
-          <td>Électronique</td>
-          <td>/electronics</td>
-          <td>156</td>
-          <td>
-            <button>Éditer</button>
-          </td>
-        </tr>
-      </DataTable>
-    </>
+
+      <CategoriesTableClient data={data} />
+    </div>
   )
 }

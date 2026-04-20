@@ -11,41 +11,217 @@
     "emailLabel": "Email Address",
     "passwordLabel": "Password",
     "forgotPasswordLink": "Forgot password?",
-    "loginButton": "Login",
+    "loginButton": "Log In",
     "loading": "Loading...",
     "orContinueWith": "Or continue with",
     "noAccount": "Don't have an account?",
-    "registerLink": "Register",
+    "registerLink": "Sign Up",
     "backToHome": "Back",
     "footerBrand": "E-commerce",
     "emailInvalid": "Please enter a valid email address",
     "passwordTooShort": "Password must be at least 8 characters long",
-    "registerMetadataTitle": "Create an account",
+    "registerMetadataTitle": "Create an Account",
     "registerMetadataDescription": "Sign up to enjoy our offers.",
-    "registerTitle": "Register",
+    "registerTitle": "Sign Up",
     "registerSubtitle": "Join the adventure",
     "nameLabel": "Full Name",
-    "confirmPasswordLabel": "Confirm password",
+    "confirmPasswordLabel": "Confirm Password",
     "registerButton": "Create my account",
     "alreadyHaveAccount": "Already have an account?",
-    "loginLink": "Login",
+    "loginLink": "Log In",
     "nameTooShort": "Name must be at least 2 characters long",
     "passwordsDontMatch": "Passwords do not match",
     "forgotPasswordMetadataTitle": "Forgot Password | E-commerce",
     "forgotPasswordMetadataDescription": "Reset your password securely.",
     "forgotPasswordTitle": "Forgot Password",
     "forgotPasswordSubtitle": "Enter your email to receive a reset link",
-    "sendResetLink": "Send link",
+    "sendResetLink": "Send Link",
     "rememberPassword": "Remember it?",
     "checkEmailTitle": "Check your emails",
-    "checkEmailDescription": "If an account exists for this email, you will receive a reset link in a few moments.",
-    "retryButton": "Try again with another email"
+    "checkEmailDescription": "If an account exists for this email, you will receive a reset link shortly.",
+    "retryButton": "Try with another email"
+  },
+  "Admin": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "categories": "Categories",
+      "orders": "Orders",
+      "users": "Users",
+      "marketing": "Marketing",
+      "reviews": "Reviews",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "metadata": {
+      "description": "Store management dashboard, products and orders control."
+    },
+    "dashboard": {
+      "metadata": {
+        "title": "Dashboard",
+        "description": "Overview of store performance"
+      },
+      "title": "Overview",
+      "subtitle": "Real-time statistics for your store",
+      "revenue": "Revenue",
+      "orders": "Orders",
+      "customers": "New Customers",
+      "sales": "Sales",
+      "trends": {
+        "up": "from last month"
+      },
+      "charts": {
+        "revenue": "Revenue Analysis",
+        "sales": "Recent Sales"
+      }
+    },
+    "categories": {
+      "metadata": {
+        "title": "Category Management",
+        "description": "Organize your products into categories."
+      },
+      "title": "Categories",
+      "subtitle": "Manage your store's product categories",
+      "add_button": "Add Category",
+      "search_placeholder": "Filter categories...",
+      "actions": {
+        "edit": "Edit",
+        "delete": "Delete"
+      },
+      "columns": {
+        "name": "Name",
+        "slug": "Slug",
+        "products": "Linked Products",
+        "actions": "Actions"
+      },
+      "delete_dialog": {
+        "title": "Are you sure?",
+        "description": "This action is irreversible. This will permanently delete the category.",
+        "confirm": "Delete",
+        "cancel": "Cancel"
+      },
+      "form": {
+        "add_title": "New Category",
+        "edit_title": "Edit Category",
+        "description_text": "Fill in the details for your product category.",
+        "name_label": "Category Name",
+        "name_placeholder": "e.g., Electronics",
+        "slug_label": "Slug (URL)",
+        "slug_placeholder": "e.g., electronics",
+        "desc_label": "Description",
+        "desc_placeholder": "Briefly describe this category...",
+        "submit_add": "Create Category",
+        "submit_edit": "Save Changes",
+        "errors": {
+          "name_required": "Name is required",
+          "slug_required": "Slug is required",
+          "desc_too_short": "Description is too short"
+        }
+      }
+    },
+    "marketing": {
+      "metadata": {
+        "title": "Marketing & Promotions",
+        "description": "Manage your promo codes and advertising campaigns."
+      },
+      "title": "Marketing & Promotions",
+      "subtitle": "Boost your sales with targeted offers",
+      "create_coupon": {
+        "title": "Create a promo code",
+        "description": "Generate instant discounts",
+        "code_placeholder": "e.g., SUMMER20",
+        "discount_placeholder": "20",
+        "submit": "Generate code",
+        "errors": {
+          "code_required": "Code is required",
+          "discount_min": "Discount must be at least 1%",
+          "discount_max": "Discount cannot exceed 100%"
+        }
+      },
+      "campaigns": {
+        "title": "Active Campaigns",
+        "banners_title": "Banner Management",
+        "banners_description": "View and manage your promotional displays",
+        "banner_summer": "Summer Banner",
+        "add_banner": "Add Banner",
+        "expires_in": "Expires in {days} days",
+        "status_active": "Active",
+        "table": {
+          "name": "Name",
+          "status": "Status",
+          "expiry": "Expiry",
+          "actions": "Actions"
+        },
+        "form": {
+          "title_add": "New Banner",
+          "title_edit": "Edit Banner",
+          "description_text": "Fill in the campaign details.",
+          "name_label": "Campaign Name",
+          "name_placeholder": "e.g., Winter Sales",
+          "image_label": "Image URL",
+          "image_placeholder": "https://...",
+          "active_label": "Active banner",
+          "expiry_label": "Expiry Date",
+          "submit_add": "Create",
+          "submit_edit": "Save",
+          "errors": {
+            "name_required": "Name is required",
+            "url_invalid": "Invalid URL",
+            "date_invalid": "Date required"
+          }
+        }
+      }
+    },
+    "orders": {
+      "metadata": {
+        "title": "Orders",
+        "description": "Track and manage customer orders."
+      },
+      "title": "Order Management",
+      "subtitle": "View and update the status of sales",
+      "table": {
+        "id": "ID",
+        "customer": "Customer",
+        "total": "Total",
+        "status": "Status",
+        "actions": "Actions",
+        "view_details": "Details"
+      },
+      "statuses": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled"
+      },
+      "details": {
+        "title": "Order Details",
+        "description": "View complete information and manage status.",
+        "customer_info": "Customer Information",
+        "shipping_address": "Shipping Address",
+        "items_list": "Ordered Items",
+        "summary": "Financial Summary",
+        "status_management": "Status Management",
+        "table": {
+          "product": "Product",
+          "qty": "Qty",
+          "price": "Price"
+        },
+        "fields": {
+          "email": "Email",
+          "phone": "Phone",
+          "subtotal": "Subtotal",
+          "shipping": "Shipping",
+          "total": "Total"
+        }
+      }
+    }
   },
   "Driver": {
     "title": "Driver Area",
     "nav": {
       "available": "Available",
-      "active": "In Progress",
+      "active": "Active",
       "history": "History"
     },
     "dashboardTitle": "Dashboard",
@@ -57,28 +233,28 @@
       "activeTime": "Time Online"
     },
     "activeTitle": "Current Delivery",
-    "activeSubtitle": "Delivery in progress to the client",
+    "activeSubtitle": "Delivery in progress to the customer",
     "availableTitle": "Available Deliveries",
     "noAvailableOrders": "No deliveries available at the moment.",
     "delivery": {
       "order": "Order",
-      "client": "Client",
-      "seeOnMap": "See on map",
-      "finishDelivery": "Complete delivery",
-      "acceptDelivery": "Accept delivery",
+      "client": "Customer",
+      "seeOnMap": "View on Map",
+      "finishDelivery": "Finish Delivery",
+      "acceptDelivery": "Accept Job",
       "ready": "Ready",
       "active": "On the way",
       "completed": "Delivered",
       "callClient": "Call",
       "messageClient": "Message",
-      "estimatedArrival": "Estimated arrival",
+      "estimatedArrival": "Estimated Arrival",
       "steps": {
         "pickup": "Pickup",
-        "delivery": "Handover to client"
+        "delivery": "Handover to customer"
       }
     },
     "historyTitle": "Delivery History",
-    "historySubtitle": "Track your past performance",
+    "historySubtitle": "Check your past performance",
     "table": {
       "date": "Date",
       "order": "Order",
@@ -86,7 +262,7 @@
       "status": "Status"
     }
   },
- "Customer": {
+  "Customer": {
     "nav": {
       "home": "My Account",
       "shop": "Shop",
@@ -104,25 +280,25 @@
     "dashboard": {
       "welcome": "Welcome to your personal space.",
       "stats": {
-        "activeOrders": "{count} in progress",
-        "savedProducts": "Saved products",
+        "activeOrders": "{count} active",
+        "savedProducts": "Saved Products",
         "availableDiscount": "{amount}€ discount available",
         "deliveryFinished": "Delivery completed",
         "loyaltyPoints": "Loyalty Points",
-        "lastOrder": "Last order",
-        "daysAgo": "{count} days ago"
+        "lastOrder": "Last Order",
+        "daysAgo": "{count}d ago"
       },
       "sections": {
-        "upcomingDeliveries": "Upcoming deliveries",
+        "upcomingDeliveries": "Upcoming Deliveries",
         "noDeliveries": "No deliveries scheduled for today.",
-        "recentMessages": "Recent messages",
+        "recentMessages": "Recent Messages",
         "noMessages": "You have no new messages.",
         "noWishlist": "Your wishlist is currently empty."
       }
     },
     "orders": {
       "perPage": "{count} per page",
-      "viewDetails": "View details",
+      "viewDetails": "View Details",
       "statusLabel": "Status",
       "totalLabel": "Total",
       "searchPlaceholder": "Search by order no...",
@@ -138,11 +314,11 @@
         "priceDesc": "Price: High to Low"
       },
       "backToList": "Back to list",
-      "downloadInvoice": "Download invoice (PDF)",
+      "downloadInvoice": "Download Invoice (PDF)",
       "support": "Need help? Support",
-      "details": "Order details",
+      "details": "Order Details",
       "shipping": "Shipping",
-      "billing": "Payment",
+      "billing": "Billing",
       "address": "Shipping Address",
       "paymentConfirmed": "Transaction confirmed",
       "table": {
@@ -161,41 +337,53 @@
       "profile": {
         "title": "Personal Information",
         "avatar": "Profile Picture",
-        "changeAvatar": "Change photo",
+        "changeAvatar": "Change Picture",
         "name": "Full Name",
         "email": "Email Address",
         "firstName": "First Name",
         "lastName": "Last Name",
         "imageConstraints": "JPG, PNG or GIF. Max 2MB.",
         "phoneNumber": "Phone Number",
-        "save": "Save changes"
+        "save": "Save Changes"
       },
       "security": {
         "title": "Password",
-        "currentPassword": "Current password",
-        "newPassword": "New password",
-        "confirmPassword": "Confirm password",
-        "update": "Update password"
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password",
+        "update": "Update Password"
       },
       "dangerZone": {
         "title": "Delete Account",
-        "description": "This action is irreversible. All your data will be permanently deleted.",
+        "description": "This action is irreversible. All your data will be permanently erased.",
         "deleteButton": "Permanently delete my account",
         "cancel": "Cancel"
       },
       "errors": {
-        "minChar": "This field must be at least 2 characters",
+        "minChar": "This field must contain at least 2 characters",
         "invalidEmail": "Invalid email address",
         "invalidPhone": "Invalid phone number",
-        "passwordLength": "Password must be at least 8 characters",
+        "passwordLength": "Password must be at least 8 characters long",
         "passwordMatch": "Passwords do not match"
       }
     }
   },
   "Common": {
-    "switchLanguage": "Change language",
+    "switchLanguage": "Change Language",
     "light": "Light",
     "dark": "Dark",
-    "system": "System"
+    "system": "System",
+    "table": {
+      "no_results": "No results.",
+      "previous": "Previous",
+      "next": "Next",
+      "showing": "Showing {first} to {last} of {total} results",
+      "search_all": "Search all columns...",
+      "rows_per_page": "Rows per page",
+      "page_info": "Page {current} of {total}"
+    },
+    "actions": {
+      "close": "Close"
+    }
   }
 }
