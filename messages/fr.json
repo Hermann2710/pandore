@@ -215,6 +215,133 @@
           "total": "Total"
         }
       }
+    },
+    "reviews": {
+      "metadata": {
+        "title": "Modération des avis",
+        "description": "Gérez et modérez les commentaires des clients sur vos produits."
+      },
+      "title": "Modération des Avis",
+      "subtitle": "Gérez les retours clients et la visibilité des commentaires",
+      "table": {
+        "product": "Produit",
+        "rating": "Note",
+        "comment": "Commentaire",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "status": {
+        "pending": "En attente",
+        "approved": "Approuvé",
+        "rejected": "Rejeté"
+      },
+      "actions": {
+        "approve": "Approuver",
+        "reject": "Rejeter",
+        "delete": "Supprimer"
+      }
+    },
+    "users": {
+      "metadata": {
+        "title": "Gestion des utilisateurs",
+        "description": "Administrez les comptes, rôles et accès des utilisateurs."
+      },
+      "title": "Utilisateurs",
+      "subtitle": "Gérez les permissions et les statuts des comptes",
+      "table": {
+        "user": "Utilisateur",
+        "contact": "Contact",
+        "role": "Rôle",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "roles": {
+        "admin": "Administrateur",
+        "delivery": "Livreur",
+        "customer": "Client"
+      },
+      "edit": {
+        "title": "Modifier l'utilisateur",
+        "role_label": "Rôle de l'utilisateur",
+        "status_label": "État du compte",
+        "active": "Actif",
+        "disabled": "Désactivé",
+        "first_name": "Prénom",
+        "last_name": "Nom",
+        "phone": "Téléphone"
+      },
+      "delete": {
+        "title": "Supprimer l'utilisateur",
+        "description": "Êtes-vous sûr ? Cette action est irréversible et supprimera toutes les données associées.",
+        "confirm": "Supprimer définitivement"
+      }
+    },
+    "settings": {
+      "metadata": {
+        "title": "Paramètres Généraux",
+        "description": "Configurez les informations de votre boutique et les frais de livraison."
+      },
+      "title": "Paramètres Généraux",
+      "subtitle": "Gérez la configuration globale de votre plateforme",
+      "fields": {
+        "store_name": "Nom de la boutique",
+        "shipping_fees": "Frais de livraison par défaut",
+        "free_shipping_threshold": "Seuil de livraison gratuite"
+      },
+      "errors": {
+        "min_2": "Le nom doit contenir au moins 2 caractères",
+        "max_50": "Le nom ne peut pas dépasser 50 caractères",
+        "invalid_number": "Veuillez entrer un nombre valide",
+        "min_0": "La valeur doit être supérieure ou égale à 0"
+      }
+    },
+    "products": {
+      "metadata": {
+        "title": "Gestion des Produits",
+        "description": "Consultez et modifiez votre inventaire de produits."
+      },
+      "title": "Gestion des Produits",
+      "subtitle": "Administrez votre catalogue et suivez les niveaux de stock",
+      "new_product": "Nouveau Produit",
+      "table": {
+        "name": "Nom",
+        "price": "Prix",
+        "stock": "Stock",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "stock_status": {
+        "in_stock": "En stock",
+        "low_stock": "Stock faible",
+        "out_of_stock": "Rupture"
+      },
+      "add": "Ajouter un produit",
+      "edit_title": "Modifier le produit",
+      "fields": {
+        "name": "Nom du produit",
+        "description": "Description",
+        "slug": "Slug",
+        "price": "Prix",
+        "category": "Catégorie",
+        "quantity": "Quantité en stock",
+        "images": "Images (1 à 5)",
+        "brand": "Marque (optionnel)",
+        "manufacturer": "Fabricant (optionnel)",
+        "created_at": "Date de création (optionnel)",
+        "expired_at": "Date d'expiration (optionnel)"
+      },
+      "errors": {
+        "required": "Ce champ est obligatoire",
+        "min_1_image": "Au moins une image est requise",
+        "max_5_images": "Maximum 5 images autorisées",
+        "invalid_price": "Prix invalide",
+        "invalid_slug": "Format de slug invalide (ex: mon-produit)"
+      },
+      "delete": {
+        "title": "Supprimer le produit",
+        "description": "Êtes-vous sûr de vouloir supprimer ce produit ? Cette action est irréversible.",
+        "confirm": "Supprimer définitivement"
+      }
     }
   },
   "Driver": {
@@ -383,7 +510,11 @@
       "page_info": "Page {current} sur {total}"
     },
     "actions": {
-      "close": "Fermer"
+      "save": "Enregistrer les modifications",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "delete": "Supprimer",
+      "edit": "Modifier"
     }
   }
 }

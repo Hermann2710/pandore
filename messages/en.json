@@ -215,6 +215,133 @@
           "total": "Total"
         }
       }
+    },
+    "reviews": {
+      "metadata": {
+        "title": "Review Moderation",
+        "description": "Manage and moderate customer feedback on your products."
+      },
+      "title": "Review Moderation",
+      "subtitle": "Manage customer feedback and comment visibility",
+      "table": {
+        "product": "Product",
+        "rating": "Rating",
+        "comment": "Comment",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "actions": {
+        "approve": "Approve",
+        "reject": "Reject",
+        "delete": "Delete"
+      }
+    },
+    "users": {
+      "metadata": {
+        "title": "User Management",
+        "description": "Administer user accounts, roles, and access levels."
+      },
+      "title": "Users",
+      "subtitle": "Manage account permissions and statuses",
+      "table": {
+        "user": "User",
+        "contact": "Contact",
+        "role": "Role",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "roles": {
+        "admin": "Administrator",
+        "delivery": "Delivery Driver",
+        "customer": "Customer"
+      },
+      "edit": {
+        "title": "Edit User",
+        "role_label": "User Role",
+        "status_label": "Account Status",
+        "active": "Active",
+        "disabled": "Disabled",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "phone": "Phone Number"
+      },
+      "delete": {
+        "title": "Delete User",
+        "description": "Are you sure? This action is irreversible and will delete all associated data.",
+        "confirm": "Permanently delete"
+      }
+    },
+    "settings": {
+      "metadata": {
+        "title": "General Settings",
+        "description": "Configure your store information and shipping fees."
+      },
+      "title": "General Settings",
+      "subtitle": "Manage your platform's global configuration",
+      "fields": {
+        "store_name": "Store Name",
+        "shipping_fees": "Default shipping fees",
+        "free_shipping_threshold": "Free shipping threshold"
+      },
+      "errors": {
+        "min_2": "Name must be at least 2 characters",
+        "max_50": "Name cannot exceed 50 characters",
+        "invalid_number": "Please enter a valid number",
+        "min_0": "Value must be greater than or equal to 0"
+      }
+    },
+    "products": {
+      "metadata": {
+        "title": "Product Management",
+        "description": "View and edit your product inventory."
+      },
+      "title": "Product Management",
+      "subtitle": "Manage your catalog and track stock levels",
+      "new_product": "New Product",
+      "table": {
+        "name": "Name",
+        "price": "Price",
+        "stock": "Stock",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "stock_status": {
+        "in_stock": "In stock",
+        "low_stock": "Low stock",
+        "out_of_stock": "Out of stock"
+      },
+      "add": "Add product",
+      "edit_title": "Edit product",
+      "fields": {
+        "name": "Product Name",
+        "description": "Description",
+        "slug": "Slug",
+        "price": "Price",
+        "category": "Category",
+        "quantity": "Stock Quantity",
+        "images": "Images (1 to 5)",
+        "brand": "Brand (optional)",
+        "manufacturer": "Manufacturer (optional)",
+        "created_at": "Creation Date (optional)",
+        "expired_at": "Expiration Date (optional)"
+      },
+      "errors": {
+        "required": "This field is required",
+        "min_1_image": "At least one image is required",
+        "max_5_images": "Maximum 5 images allowed",
+        "invalid_price": "Invalid price",
+        "invalid_slug": "Invalid slug format (ex: my-product)"
+      },
+      "delete": {
+        "title": "Delete Product",
+        "description": "Are you sure you want to delete this product? This action cannot be undone.",
+        "confirm": "Permanently delete"
+      }
     }
   },
   "Driver": {
@@ -383,7 +510,11 @@
       "page_info": "Page {current} of {total}"
     },
     "actions": {
-      "close": "Close"
+      "save": "Save changes",
+      "cancel": "Cancel",
+      "close": "Close",
+      "delete": "Delete",
+      "edit": "Edit"
     }
   }
 }

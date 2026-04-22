@@ -167,7 +167,7 @@ export function OrderDetailsSheet({ orderId, trigger }: OrderDetailsProps) {
               <Separator />
               <div className="flex items-center justify-between pt-1">
                 <span className="text-base font-bold">{t("fields.total")}</span>
-                <span className="font-mono text-xl font-bold text-blue-600">
+                <span className="font-mono text-xl font-bold text-orange-600">
                   {order.financials.total.toFixed(2)}€
                 </span>
               </div>

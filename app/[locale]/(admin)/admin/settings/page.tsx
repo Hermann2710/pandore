@@ -1,19 +1,15 @@
+import { SettingsForm } from "@/components/admin"
+import { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Admin.settings.metadata")
+  return {
+    title: t("title"),
+    description: t("description"),
+  }
+}
+
 export default function AdminSettingsPage() {
-  return (
-    <>
-      <h2>Paramètres Généraux</h2>
-      <form className="settings-grid">
-        <label>Nom de la boutique</label>
-        <input type="text" defaultValue="Ma Super Boutique" />
-
-        <label>Frais de livraison par défaut</label>
-        <input type="number" defaultValue={5.99} />
-
-        <label>Seuil de livraison gratuite</label>
-        <input type="number" defaultValue={50} />
-
-        <button type="submit">Sauvegarder la configuration</button>
-      </form>
-    </>
-  )
+  return <SettingsForm />
 }

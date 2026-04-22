@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import { useTranslations } from "next-intl"
-import { Input } from "@/components/ui/input"
 import { DataTable } from "./DataTable"
 import { ColumnDef } from "@tanstack/react-table"
 import { CategoryActions } from "./CategoryActions"
@@ -37,20 +36,5 @@ export function CategoriesTableClient({ data }: { data: any[] }) {
     },
   ]
 
-  const [filtering, setFiltering] = React.useState("")
-
-  return (
-    <div className="space-y-4">
-      <div className="flex items-center gap-2">
-        <Input
-          placeholder={t("search_placeholder")}
-          value={filtering}
-          onChange={(e) => setFiltering(e.target.value)}
-          className="max-w-sm"
-        />
-      </div>
-
-      <DataTable columns={columns} data={data} filterValue={filtering} />
-    </div>
-  )
+  return <DataTable columns={columns} data={data} />
 }

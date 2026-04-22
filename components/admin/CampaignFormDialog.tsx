@@ -58,7 +58,10 @@ export function CampaignFormDialog({
     <Dialog onOpenChange={(open) => !open && !isEditing && reset()}>
       <DialogTrigger asChild>
         {trigger || (
-          <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+          <Button
+            size="sm"
+            className="bg-orange-600 text-white hover:bg-orange-700 hover:text-white"
+          >
             <Plus className="mr-2 h-4 w-4" />
             {useTranslations("Admin.marketing.campaigns")("add_banner")}
           </Button>
@@ -122,9 +125,14 @@ export function CampaignFormDialog({
               id="isActive"
               checked={isActive}
               onCheckedChange={(checked) => setValue("isActive", checked)}
+              className="data-[state=checked]:bg-orange-600"
             />
           </div>
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full bg-orange-600 text-white hover:bg-orange-700 hover:text-white"
+            disabled={isSubmitting}
+          >
             {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             {isEditing ? t("submit_edit") : t("submit_add")}
           </Button>

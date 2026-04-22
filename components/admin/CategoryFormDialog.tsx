@@ -115,7 +115,11 @@ export function CategoryFormDialog({
             )}
           </div>
 
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full bg-orange-600 text-white hover:bg-orange-700 hover:text-white"
+            disabled={isSubmitting}
+          >
             {isSubmitting
               ? "..."
               : isEditing

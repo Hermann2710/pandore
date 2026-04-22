@@ -1,21 +1,16 @@
-import { DataTable } from "@/components/admin"
+import { ReviewsTableClient } from "@/components/admin"
+import { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Admin.reviews.metadata")
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  }
+}
 
 export default function AdminReviewsPage() {
-  return (
-    <>
-      <h2>Modération des Avis</h2>
-      <DataTable
-        headers={["Produit", "Note", "Commentaire", "Statut", "Actions"]}
-      >
-        <tr>
-          <td>Produit X</td>
-          <td>⭐⭐⭐⭐</td>
-          <td>"Super qualité !"</td>
-          <td>
-            <button>Approuver</button> <button>Supprimer</button>
-          </td>
-        </tr>
-      </DataTable>
-    </>
-  )
+  return <ReviewsTableClient />
 }

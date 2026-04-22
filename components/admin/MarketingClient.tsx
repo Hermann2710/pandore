@@ -115,7 +115,7 @@ export function MarketingClient() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-blue-600">
+            <CardTitle className="flex items-center gap-2 text-orange-600">
               <Megaphone className="size-5" />
               {tc("title")}
             </CardTitle>
@@ -184,7 +184,7 @@ export function MarketingClient() {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-8 w-8 text-blue-600"
+                            className="h-8 w-8 text-orange-600"
                           >
                             <Edit2 className="h-4 w-4" />
                           </Button>
